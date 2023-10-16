@@ -54,3 +54,6 @@ next-env.d.ts
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
+
+# pgdata
+/docker/db
