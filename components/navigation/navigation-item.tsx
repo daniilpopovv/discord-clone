@@ -1,8 +1,7 @@
 'use client';
 
-import { router } from 'next/client';
 import Image from 'next/image';
-import { useParams } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 
 import { ActionTooltip } from '@/components/action-tooltip';
 import { cn } from '@/lib/utils';
@@ -15,6 +14,7 @@ interface NavigationItemProps {
 
 const NavigationItem = ({ id, imageUrl, name }: NavigationItemProps) => {
   const params = useParams();
+  const router = useRouter();
 
   const onClick = () => {
     router.push(`/servers/${id}`);
