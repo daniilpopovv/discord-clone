@@ -1,7 +1,7 @@
 import { Server } from '@prisma/client';
 import { create } from 'zustand';
 
-type ServerModalType = 'createServer' | 'editServer';
+type ServerModalType = 'createServer' | 'editServer' | 'deleteServer';
 type ChannelModalType = 'createChannel';
 type MemberModalType = 'invite' | 'members' | 'leaveServer';
 
