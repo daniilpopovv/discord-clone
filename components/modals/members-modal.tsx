@@ -136,10 +136,10 @@ export const MembersModal = () => {
                                 onClick={() =>
                                   onRoleChange(member.id, MemberRole.GUEST)
                                 }
+                                className="capitalize"
                               >
                                 <Shield className="h-4 w-4 mr-2" />
-                                {MemberRole.GUEST.charAt(0) +
-                                  MemberRole.GUEST.toLowerCase().slice(1)}
+                                {MemberRole.GUEST.toLowerCase()}
                                 {member.role === MemberRole.GUEST && (
                                   <Check className="h-4 w-4 ml-auto" />
                                 )}
@@ -148,10 +148,10 @@ export const MembersModal = () => {
                                 onClick={() =>
                                   onRoleChange(member.id, MemberRole.MODERATOR)
                                 }
+                                className="capitalize"
                               >
                                 <ShieldCheck className="h-4 w-4 mr-2" />
-                                {MemberRole.MODERATOR.charAt(0) +
-                                  MemberRole.MODERATOR.toLowerCase().slice(1)}
+                                {MemberRole.MODERATOR.toLowerCase()}
                                 {member.role === MemberRole.MODERATOR && (
                                   <Check className="h-4 w-4 ml-auto" />
                                 )}
